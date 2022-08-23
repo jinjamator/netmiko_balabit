@@ -8,9 +8,9 @@ netmiko_balabit is an out of tree netmiko driver for the balabit shell control b
 Installation
 ------------
 
-Install jinjamator by running:
+Install the netmiko balabit driver by running:
 
-    pip3 install netmiko_balabit
+    pip3 install netmiko-balabit
 
 Usage
 -----
