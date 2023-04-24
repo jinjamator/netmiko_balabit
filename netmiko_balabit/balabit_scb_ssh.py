@@ -36,7 +36,8 @@ class SecretsFilter(logging.Filter):
                     for item in hidden_data:
                         record.msg = record.msg.replace(item, "********")
                 else:
-                    record.msg = record.msg.replace(hidden_data, "********")
+                    if hidden_data:
+                        record.msg = record.msg.replace(hidden_data, "********")
         return True
 
 
